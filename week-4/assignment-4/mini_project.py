@@ -20,12 +20,12 @@ high_scorers = []
 for student in students:
     score = student["score"]
     name = student["name"]
-    subjet = student["subject"]
+    subject = student["subject"]
     if score > top_score:
         top_score = score
         top_name = name
     total_score += score
-    unique_subjects.add(subjet)
+    unique_subjects.add(subject)
     if score > 75:
         high_scorers.append(name)
 class_average = total_score / len(students)
